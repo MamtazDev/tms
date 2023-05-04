@@ -1,0 +1,19 @@
+.logo {
+  font-size: 3.5rem;
+  letter-spacing: 16px;
+  font-weight: 600;
+  background: linear-gradient(#0857ac, #ffffff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  position: relative;
+}
+.logo::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateX(180deg);
+  line-height: 52px;
+  transform-origin: bottom;
+  background: linear-gradient(to top);
+}
