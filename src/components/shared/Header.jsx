@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { NavLink } from "react-router-dom";
 
 const buttons = [
   {
@@ -21,17 +22,29 @@ const buttons = [
 ];
 
 const Header = () => {
+  const activeClassName = "border-2 border-[#4364ad] text-[#4364ad]";
   return (
     <section className="flex justify-around my-16">
-      <div>
-        <div className="logo">TMS</div>
-        <p>Take My Stuff</p>
+      <div className="flex flex-col items-center">
+        <div data-text="TMS" className="logo">
+          TMS
+        </div>
+        <p className="logo-footer m-0 p-0">Take My Stuff</p>
       </div>
       <div className="text-white grid grid-cols-2 gap-4">
         {buttons.map((button, idx) => (
-          <div className="border-2 text-center p-4">
-            <button>{button.name}</button>
-          </div>
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? activeClassName
+                : "border-2 hover:border-[#4364ad] hover:text-[#4364ad]"
+            }
+            to={`${button?.link}`}
+          >
+            <div key={idx} className="text-center p-4">
+              <button>{button.name}</button>
+            </div>
+          </NavLink>
         ))}
       </div>
     </section>
