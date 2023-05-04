@@ -34,7 +34,9 @@ const Home = () => {
                 alt=""
               />
             </div>
-            <h4 className="mt-8 address-text">{i?.address}</h4>
+            <div className="px-8">
+              <h4 className="mt-8 address-text">{i?.address}</h4>
+            </div>
           </div>
         ))}
       </div>
