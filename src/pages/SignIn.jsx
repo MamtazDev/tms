@@ -22,7 +22,7 @@ const SignIn = () => {
             />
           </div>
           <div className="text-white text-center">
-            <button className="border-2 px-2">Sign Me Up!</button>
+            <button className="border-2 px-2">Sign Me In!</button>
           </div>
         </form>
       </div>

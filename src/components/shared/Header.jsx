@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const buttons = [
   {
     name: "Find Storage",
-    link: "/",
+    link: "/search",
   },
   {
     name: "Sign In",
@@ -25,12 +25,14 @@ const Header = () => {
   const activeClassName = "border-2 border-[#4364ad] text-[#4364ad]";
   return (
     <section className="flex justify-around my-16">
-      <div className="flex flex-col items-center">
-        <div data-text="TMS" className="logo">
-          TMS
+      <Link to="/">
+        <div className="flex flex-col items-center">
+          <div data-text="TMS" className="logo">
+            TMS
+          </div>
+          <p className="logo-footer m-0 p-0">Take My Stuff</p>
         </div>
-        <p className="logo-footer m-0 p-0">Take My Stuff</p>
-      </div>
+      </Link>
       <div className="text-white grid grid-cols-2 gap-4">
         {buttons.map((button, idx) => (
           <NavLink
