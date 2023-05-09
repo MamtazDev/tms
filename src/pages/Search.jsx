@@ -8,8 +8,8 @@ const Search = () => {
       </h3>
 
       <div className="container">
-        <form className=" grid grid-cols-3 gap-x-24 gap-y-5">
-          <div className="flex justify-between">
+        <form className=" grid grid-cols-1 p-10 lg:p-0 lg:grid-cols-3 gap-x-24 gap-y-5">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
             <label>By Location:</label>
             <input
               className="inputFiled"
@@ -18,7 +18,7 @@ const Search = () => {
               required
             />
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
             <label>By Category:</label>
             <input
               className="inputFiled"
@@ -27,7 +27,7 @@ const Search = () => {
               required
             />
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
             <label>By Dates: From:</label>
             <input
               className="inputFiled"
@@ -36,19 +36,19 @@ const Search = () => {
               required
             />
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
             <label>By Price:</label>
             <input className="inputFiled" type="text" name="price" required />
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
             <label>By Space:</label>
             <input className="inputFiled" type="text" name="space" required />
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col lg:flex-row lg:justify-between">
             <label>To:</label>
             <input className="inputFiled" type="text" name="dateTo" required />
           </div>
-          <div className="text-white text-center col-start-2">
+          <div className="text-white text-center  lg:col-start-2">
             <button className="border-2 px-2">Lets Go Searching!</button>
           </div>
         </form>
