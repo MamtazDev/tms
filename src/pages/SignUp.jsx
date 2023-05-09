@@ -7,7 +7,7 @@ const SignUp = () => {
       <h3 className="text-center text-[1.5rem] mb-16">
         Great! We Will Need Some Information:
       </h3>
-      <div className="grid grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 p-10 lg:p-0">
         <div className="flex items-center">
           <form className="w-[300px] flex flex-col gap-5">
             <div className="flex justify-between">
@@ -55,7 +55,7 @@ const SignUp = () => {
             </div>
           </form>
         </div>
-        <div className="image-reflection h-[350px]">
+        <div className="image-reflection h-[350px] hidden lg:block">
           <img
             className="rounded-[20px] h-full"
             src="https://media.istockphoto.com/id/157696118/tr/foto%C4%9Fraf/american-flag-with-uncle-sam-pointing-at-you.jpg?s=612x612&w=is&k=20&c=EkdV1C70aDHQMmApFuFBXKKqaYNuu9sRyfhEhaf7Fgw="

@@ -24,7 +24,7 @@ const Home = () => {
       <h3 className="text-center text-[1.5rem] mb-16">
         Here's Some of What We Have to Offer:
       </h3>
-      <div className="grid grid-cols-3 gap-20">
+      <div className="grid mb-[100px] p-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
         {images.map((i, idx) => (
           <div>
             <div className="w-full h-[250px] image-reflection">

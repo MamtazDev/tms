@@ -24,7 +24,7 @@ const buttons = [
 const Header = () => {
   const activeClassName = "border-2 border-[#4364ad] text-[#4364ad]";
   return (
-    <section className="flex justify-around my-16">
+    <section className="flex flex-col lg:flex-row gap-10 lg:gap-0  lg:justify-around my-16">
       <Link to="/">
         <div className="flex flex-col items-center">
           <div data-text="TMS" className="logo">
@@ -33,7 +33,8 @@ const Header = () => {
           <p className="logo-footer m-0 p-0">Take My Stuff</p>
         </div>
       </Link>
-      <div className="text-white grid grid-cols-2 gap-4">
+      {/* <div className="text-white grid grid-cols-1 md:gird-cols-2 lg:grid-cols-2 gap-4"> */}
+      <div className="text-white grid grid-cols-2 gap-4 p-5 lg:p-0">
         {buttons.map((button, idx) => (
           <NavLink
             className={({ isActive }) =>
